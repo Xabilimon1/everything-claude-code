@@ -10,14 +10,14 @@ Use this workflow when working on **add-or-update-skill** in `everything-claude-
 
 ## Goal
 
-Adds a new skill or updates documentation for an existing skill.
+Adds or updates a skill, including its documentation and configuration.
 
 ## Common Files
 
-- `skills/*/SKILL.md`
-- `docs/zh-CN/skills/*/SKILL.md`
-- `docs/tr/skills/*/SKILL.md`
-- `docs/pt-BR/skills/*/SKILL.md`
+- `.claude/commands/add-or-update-skill.md`
+- `.claude/skills/*/SKILL.md`
+- `.agents/skills/*/SKILL.md`
+- `.agents/skills/*/agents/*.yaml`
 
 ## Suggested Sequence
 
@@ -28,9 +28,10 @@ Adds a new skill or updates documentation for an existing skill.
 
 ## Typical Commit Signals
 
-- Create or update SKILL.md in the appropriate skills/<skill-name>/ or docs/<lang>/skills/<skill-name>/ directory.
-- Optionally add architecture diagrams, implementation patterns, or integration guidance.
-- Update documentation in other languages if available.
+- Create or update .claude/commands/add-or-update-skill.md
+- Create or update .claude/skills/<skill-name>/SKILL.md
+- Optionally update .agents/skills/<skill-name>/SKILL.md
+- Optionally update .agents/skills/<skill-name>/agents/*.yaml
 
 ## Notes
 
